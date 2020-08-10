@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
 
 
 router.get('/:id', (req, res) => {
-  let pokeID = req.params.id;
+  let pokeID = req.params.id; 
   let pokemonAPI = 'http://pokeapi.co/api/v2/pokemon/' + pokeID;
   axios.get(pokemonAPI).then(response => {
     let pokemonData = response.data;
